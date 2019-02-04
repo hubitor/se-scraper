@@ -2,7 +2,49 @@
     - fix interface to scrape() [DONE]
     - add to Github
 
+
+24.1.2018
+
+    - fix issue #3: add functionality to add keyword file
+
+27.1.2019
+
+    - Add functionality to block images and CSS from loading as described here:
+
+        https://www.scrapehero.com/how-to-increase-web-scraping-speed-using-puppeteer/
+        https://www.scrapehero.com/how-to-build-a-web-scraper-using-puppeteer-and-node-js/
+
+29.1.2019
+
+    - implement proxy support functionality
+        - implement proxy check
+
+    - implement scraping more than 1 page
+        - do it for google
+        - and bing
+
+    - implement duckduckgo scraping
+
+
+30.1.2019
+
+    - modify all scrapers to use the generic class where it makes sense
+        - Bing, Baidu, Google, Duckduckgo
+
 TODO:
+    - think about implementing ticker search for: https://quotes.wsj.com/MSFT?mod=searchresults_companyquotes
     - add proxy support
     - add captcha service solving support
     - check if news instances run the same browser and if we can have one proxy per tab wokers
+
+TODO:
+    - think whether it makes sense to introduce a generic scraping class?
+    - is scraping abstractable or is every scraper too unique?
+    - dont make the same mistakes as with GoogleScraper
+
+
+TODO:
+    okay its fucking time to make a generic scraping class like in GoogleScraper [done]
+    i feel like history repeats
+
+    write good test case for google
